@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="myscripts.js"></script>
+    <title>Home - Monica's Recipes</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navPlace">
+        <div class="dropdown">
+            <button class="dropbtn">MENU</button>
+            <div class="dropdown-content">
+                <div id="homeButton"><a href="index.html">HOME</a></div>
+                <a href="#">ALL RECIPES</a>
+                <a href="#">SEARCH</a>
+                <a href="#">LIKED RECIPES</a>
+                <a href="#">PROFILE</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT US</a>
+
+                <b href="#">RECIPES BY CATEGORY </b>
+                <a href="recipes.html">QUICK & SIMPLE</a>
+                <a href="#">GROUP DINNERS</a>
+                <a href="#">BUDGET FRIENDLY</a>
+            
+                
+                <b href="#">RECIPES BY MEAL</b>
+                <a href="#">BREAKFAST</a>
+                <a href="#">LUNCH</a>
+                <a href="#">DINNER</a>
+                <a href="#">DESSERT</a>
+                
+                <b href="#">RECIPES BY DIETARY NEEDS</b>
+                <a href="#">VEGETARIAN </a>
+                <a href="#">VEGAN</a>
+                <a href="#">GLUTEN-FREE</a>
+                <a href="#">DAIRY-FREE</a>
+            </div>
+          </div>
+    </nav>
+
+    <header>
+        <h2 id="logoHeader"><a href="index.html"; style="text-decoration: none; color: #ffffff;">Monica's</a></h2>
+        <h6 id="logoTagline">recipes for students, by students</h6>
+    </header>
+
+    <nav class="navPlace">
+        <img src = icons/heart.svg alt="heart outline icon for favuorite recipes" height="30rem" width="">
+        <img src = icons/profile.svg alt="person outline icon for user profile" height="30rem" width="">
+        <img src = icons/search.svg alt="person outline icon for user profile" height="30rem" width="">
+    </nav>
+
+    <section>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+  
+    <div class="mySlides fade">
+      <img src="images/Frame 1.png" 
+      style="width:100%; height: 45rem; object-fit: cover; object-position: 0rem -4rem"></div>
+
+    <div class="mySlides fade">
+      <img src="images/Frame 2.png" 
+      style="width:100%; height: 45rem; object-fit: cover; object-position: 0rem -4rem"></div>
+  
+    <div class="mySlides fade">
+      <img src="images/Frame 3.png" 
+      style="width:100%; height: 45rem; object-fit: cover; object-position: 0rem -4rem"></div>
+
+    <div class="mySlides fade">
+        <img src="images/Frame 4.png" 
+        style="width:100%; height: 45rem; object-fit: cover; object-position: 0rem -4rem"></div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <script>
+    showSlides(slideIndex);
+  </script>
+
+  <br>
+
+    </section>
+
+    <section>
+        
+        <h2 id="rotwHeader">RECIPES OF THE WEEK</h2>
+
+        <div class="scrollContainer">
+            <div class="scrollItem">
+                <img src = images/pie.jpg alt="banoffee pie with whipped cream on top and a slice taken out" height="300rem">
+                <table class="tableHome">
+                    <tr>
+                      <td><h8 class="scrollSubHead">Medium Difficulty</h8></td>
+                      <td>
+                        <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                        <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                        <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                        <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                        <img class="starHome" src = icons/star.svg alt="star outline to recflect user ratings" height="20rem">
+                      </td>
+                    </tr>
+                  </table>
+                <img class="heartHome" src = icons/heart-red.svg alt="heart outline icon for favuorite recipes" height="40rem" width="">
+                <h3 class="scrollHeading">Banoffee Pie</h3>
+            </div>
+
+            <div class="scrollItem">
+                    <img src = images/breakfast.jpg alt="overhead view of two bowls of fruit porridge" height="300rem">
+                    <table class="tableHome">
+                        <tr>
+                          <td><h8 class="scrollSubHead">Low Difficulty</h8></td>
+                          <td>
+                            <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                            <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                            <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                            <img class="starHome" src = icons/star.svg alt="star outline to recflect user ratings" height="20rem">
+                            <img class="starHome" src = icons/star.svg alt="star outline to recflect user ratings" height="20rem">
+                          </td>
+                        </tr>
+                      </table>
+                    <img class="heartHome" src = icons/heart-red.svg alt="heart outline icon for favuorite recipes" height="40rem" width="">
+                    <h3 class="scrollHeading">Fruit Porridge</h3>
+                </div>
+
+
+            <div class="scrollItem">
+                        <img src = images/lunch.jpg alt="overhead view of a plate with vegetables on the side and a sandwich with more vegetables in it" height="300rem">
+                        <table class="tableHome">
+                            <tr>
+                              <td><h8 class="scrollSubHead">Low Difficulty</h8></td>
+                              <td>
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star.svg alt="star outline to recflect user ratings" height="20rem">
+                              </td>
+                            </tr>
+                          </table>
+                        <img class="heartHome" src = icons/heart-red.svg alt="heart outline icon for favuorite recipes" height="40rem" width="">
+                        <h3 class="scrollHeading">Veg Sandwich</h3>
+                    </div>
+
+                    <div class="scrollItem">
+                        <img src = images/rice.jpg alt="large rice dish with prawns and coriander on top" height="300rem">
+                        <table class="tableHome">
+                            <tr>
+                              <td><h8 class="scrollSubHead">Medium Difficulty</h8></td>
+                              <td>
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star.svg alt="star outline to recflect user ratings" height="20rem">
+                              </td>
+                            </tr>
+                          </table>
+                        <img class="heartHome" src = icons/heart-red.svg alt="heart outline icon for favuorite recipes" height="40rem" width="">
+                        <h3 class="scrollHeading">Fried Rice</h3>
+                    </div>
+
+                    <div class="scrollItem">
+                        <img src = images/cake.jpg alt="3 teir berry sponge cake with whipped cream on top and in between layers" height="300rem">
+                        <table class="tableHome">
+                            <tr>
+                              <td><h8 class="scrollSubHead">Medium Difficulty</h8></td>
+                              <td>
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                              </td>
+                            </tr>
+                          </table>
+                        <img class="heartHome" src = icons/heart-red.svg alt="heart outline icon for favuorite recipes" height="40rem" width="">
+                        <h3 class="scrollHeading">Berry Sponge</h3>
+                    </div>
+
+                    <div class="scrollItem">
+                            <img src = images/pie.jpg alt="banoffee pie with whipped cream on top and a slice taken out" height="300rem">
+                            <table class="tableHome">
+                                <tr>
+                                  <td><h8 class="scrollSubHead">Medium Difficulty</h8></td>
+                                  <td>
+                                    <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                    <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                    <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                    <img class="starHome" src = icons/star-filled.svg alt="star outline to recflect user ratings" height="20rem">
+                                    <img class="starHome" src = icons/star.svg alt="star outline to recflect user ratings" height="20rem">
+                                  </td>
+                                </tr>
+                              </table>
+                            <img class="heartHome" src = icons/heart-red.svg alt="heart outline icon for favuorite recipes" height="40rem" width="">
+                            <h3 class="scrollHeading">Banoffee Pie</h3>
+                        </div>
+
+        </div>
+    </section>
+
+    <section>
+
+        <div class="aboutBox">
+        <svg width="100%" height="20rem">
+            <rect width="100%" height="20rem" style="fill:#C23131"/></svg>
+
+        <div class="aboutCon">
+            <div class="aboutText">
+                <h2 class="aboutHeader">ABOUT US</h2>
+                <div>
+                    <p class="aboutP" style="width: 60%;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia ipsum sit amet nulla pellentesque feugiat. Nam eget porttitor diam. Fusce a placerat nulla, ac sodales risus. Duis pulvinar eros eu sem suscipit ultricies. Donec convallis eros pulvinar augue condimentum, sed vehicula enim pretium. Cras ac pulvinar magna, eget cursus felis. Duis nec gravida sem, at viverra ipsum. Nulla et quam non turpis elementum commodo in fringilla ligula. Duis odio erat, viverra quis placerat eget, aliquet nec odio. In nisi neque, molestie eget condimentum eget, aliquet vitae tellus. 
+                    </p>
+                </div>
+            </div>
+            <img class="aboutImg" src = images/people.jpg alt="group of three poeple sitting and smiling" height="300rem"
+              style="width: 20%; height: 25rem; object-fit: cover; object-position: -2rem 0">
+        </div>
+        </div>
+
+
+
+    </section>
+
+<!--image crop code from: https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit-->
+
+    <section>
+
+<div id="catergoriesTable" style="text-align: center;">
+
+    <a href="recipes.html"; style="text-decoration: none; color: #ffffff;">
+              <div class="squareImg">
+                  <img src = images/breakfast.jpg alt="overhead view of two bowls of fruit porridge"
+                  style="width: 20rem; height: 20rem; object-fit: cover; object-position: -8rem 0">
+                  <h2 class="squareText1">QUICK</h2>
+                  <h2 class="squareText2">& EASY</h2>
+              </div></a>
+
+                  <div class="squareImg">
+                      <img src = images/lunch.jpg alt="overhead view of a plate with vegetables on the side and a sandwich with more vegetables in it" height="300rem"
+                      style="width: 20rem; height: 20rem; object-fit: cover; object-position: -5rem 0">
+                      <h2 class="squareText1">VEGAN</h2>
+                      <h2 class="squareText2">& VEGGIE</h2>
+                  </div>
+                      <div class="squareImg">
+                          <img src = images/pie.jpg alt="banoffee pie with whipped cream on top and a slice taken out" height="300rem"
+                          style="width: 20rem; height: 20rem; object-fit: cover; object-position: -5rem 0">
+                          <h2 class="squareText1">ON A</h2>
+                          <h2 class="squareText2">BUDGET</h2>
+                      </div>
+                          <div class="squareImg">
+                              <img src = images/rice.jpg alt="large rice dish with prawns and coriander on top" height="300rem"
+                              style="width: 20rem; height: 20rem; object-fit: cover; object-position: -5rem 0">
+                              <h2 class="squareText1">FLAT</h2>
+                              <h2 class="squareText2">DINNERS</h2>
+                          </div>
+</div>
+    </section>
+
+    <section>
+        <div class="emailBox">
+        <div class="emailForm">
+        <h3 id="emailHeader">Craving More?</h3>
+        <h7 id="emailSubHeader" >Join our mailing list for recipes</h7><br>
+        <h7 id="emailSubHeader">straight to your inbox</h7>
+
+        <form class="emailSubmit" action="/action_page.php" onsubmit="return false" method="post">
+            <input type="email" id="email" placeholder="Enter email" name="emailForms">
+            <button type="submit" onclick="validateEmailSubmit()">Submit</button>
+          </form>
+        </div>
+
+
+        <img class="emailImg" src = images/cake.jpg alt="3 teir berry sponge cake with whipped cream on top and in between layers" height="300rem"
+        style="width: 45%; height: 15rem; object-fit: cover; object-position: 0rem -2rem">
+    </div>
+
+    </section>
+
+
+    <footer>
+
+        <table id="footerTable" style="width: 100%;">
+            <tr>
+                <td><ul style="list-style-type:none;">
+                <div class="narBarBlocks1" style="width: 15rem;">
+                    <a href="index.html"; style="text-decoration: none; color: #ffffff;">
+        <li><h7 class="navBarText">Home</h7></li></a>
+        <li><h7 class="navBarText">Contact Us</h7></li>
+        <li><h7 class="navBarText">About Us</h7></li>
+    </div></td>
+</ul>
+<td>
+<ul style="list-style-type:none;">
+
+    <div class="narBarBlocks" style="width: 15rem;">
+        <li><h7 class="navBarText">Search</h7></li>
+        <li><h7 class="navBarText">Profile</h7></li>
+        <li><h7 class="navBarText">Liked Recipes</h7></li>
+    </div>
+</ul></td>
+<td>
+<ul style="list-style-type:none;">
+
+    <div class="narBarBlocks" style="width: 15rem;">
+        <li><h7 class="navBarText">All Recipes</h7></li>
+        <a href="recipes.html"; style="text-decoration: none; color: #ffffff;">
+        <li><h7 class="navBarText">QUick & Simple</h7></li> </a>
+        <li><h7 class="navBarText">Budget </h7></li>
+    </div>
+</ul></td>
+<td>
+<ul style="list-style-type:none;">
+
+    <div class="narBarBlocks4" style="width: 15rem;">
+        <li><h7 class="navBarText"></h7></li>
+        <li><h7 class="navBarText">Group Dinners</h7></li>
+        <li><h7 class="navBarText">Dietary</h7></li>
+</div>
+</ul></td>
+
+<td>
+    <img class="narBarBlocks5" src = icons/facebook.svg alt="facebook logo icon" height="40rem";>
+</td>
+
+<td>
+    <img class="narBarBlocks5" src = icons/instagram.svg alt="instagram logo icon" height="40rem";>
+</td>
+
+    </tr>
+
+
+        </table>
+
+    </footer>
+</body>
+
+
+
+</html>

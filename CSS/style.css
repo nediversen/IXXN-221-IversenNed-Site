@@ -1,0 +1,517 @@
+
+
+/* CSS for Home Page */
+
+
+body {
+        margin: 0;
+        padding: 0;
+        background-color: #F4ECDC;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 6rem 45rem 30rem 55% 25rem 20rem 10rem;
+        grid-template-areas:
+            "nav1 header header nav2"
+            "section1 section1 section1 section1"
+            "section2 section2 section2 section2"
+            "section3 section3 section3 section3"
+            "section4 section4 section4 section4"
+            "section5 section5 section5 section5"
+            "footer footer footer footer";
+  }
+
+header {
+    grid-area: header;
+    background-color: #C23131;
+
+}
+
+nav:nth-of-type(1){
+    grid-area: nav1;
+    background-color: #C23131;
+
+}
+
+nav:nth-of-type(2){
+    grid-area: nav2;
+    background-color: #C23131;
+
+}
+
+section:nth-of-type(1) {
+    grid-area: section1;
+}
+
+section:nth-of-type(2) {
+    grid-area: section2;
+}
+
+section:nth-of-type(3) {
+    grid-area: section3;
+}
+
+section:nth-of-type(4) {
+    grid-area: section4;
+}
+
+section:nth-of-type(5) {
+    grid-area: section5;
+    background-color: #C23131;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* fonts & styles */
+
+@import url('https://fonts.googleapis.com/css?family=Bevan:400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+
+h1, h2, h3, h4 {
+    margin: 0%;
+    font-family: 'Bevan', serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #C23131;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h1 {font-size: 5.96rem;}
+h2 {font-size: 3.052rem;}
+h3 {font-size: 1.953rem;
+    text-transform: normal;}
+h4 {font-size: 1.563rem;
+    text-transform: normal;}
+
+h5, h6, h7 {
+    margin: 0%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #352828;
+    font-style: italic;
+}
+
+h5 {font-size: 1.563rem;
+    letter-spacing: 0.3rem;
+}
+h6 {font-size: 1.25rem;}
+h7 {font-size: 1.25rem;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+p, h8 {
+    margin: 0%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #352828;
+}
+
+p {font-size: 1.25rem;}
+h8 {font-size: 1rem;}
+
+
+
+/* nav bar formating */
+
+#logoHeader {
+  color:#FFFFFF;
+  text-align: center;
+  padding-top: 0.9rem;
+}
+
+#logoTagline {
+  color:#FFFFFF;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  text-align: center;
+  padding-top: 0rem;
+}
+
+#menuText {
+  color:#FFFFFF;
+  font-style: normal;
+}
+
+  /* position drop down menu content*/
+  
+.navPlace {
+  text-align: center;
+  padding-top: 2rem;
+  z-index: 999
+}
+
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #C23131;
+    color: white;
+    padding: 1rem;
+    border: none;
+    margin-top: -1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-style: normal;
+    text-align: left;
+    letter-spacing: 0.2rem;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 20rem;
+    min-height: 52rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 20rem;
+    }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 7px 40px;
+    text-decoration: none;
+    display: block;
+    margin: 0%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #C23131;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-style: normal;
+    text-align: left;
+  }
+
+  .dropdown-content b {
+        color: black;
+        padding-top: 20px;
+        padding-left: 20px;
+        text-decoration: none;
+        display: block;
+        margin: 0%;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        color: #352828;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-style: normal;
+        text-align: left;
+      }
+
+      #homeButton {
+        margin-top: 1rem;
+      }
+    
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #911a1a;}
+
+
+/* section 1 - hero shot */
+
+  .slideshow-container {
+    width: 100%;
+     position: absolute;
+     margin-left: 0rem;
+   }
+ 
+     /* Hide the images by default */
+     .mySlides {
+         display: none;
+       }
+   
+   /* Next & previous buttons */
+   .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: #C23131;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0.3rem;
+     user-select: none;
+
+     display: none;
+   }
+ 
+   .prev {
+     margin-left: 1rem;
+   }
+   
+   .next {
+     right: 0;
+     border-radius: 0.3rem;
+     margin-right: 1rem;
+ 
+   }
+   
+   .prev:hover, .next:hover {
+     background-color: #FFFFFF;
+   }
+   
+   .active, .dot:hover {
+     background-color: #717171;
+   }
+   
+   /* Fading animation */
+   .fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+   }
+   
+   @keyframes fade {
+     from {opacity: .4} 
+     to {opacity: 1}
+   }
+ 
+ div.scrollContainer {
+     overflow: auto;
+     white-space: nowrap;
+     padding-left: 10.5rem;
+     padding-bottom: 1rem;
+   }
+   
+ div.scrollContainer img {
+     padding: 10px;
+     z-index: 2
+ 
+   }
+ 
+ div.scrollItem {
+   margin: 0;
+   padding: 0;
+   display: inline-block;
+   grid-template-columns: 120rem 120rem 60rem;
+   grid-template-rows: 10rem 10rem;
+   grid-template-areas:
+       ".scrollSubHead .starHome .heartHome"
+       ".scrollHeading .scrollHeading .heartHome"
+ }
+
+
+/* section 2 - recipes of the week */
+
+  #rotwHeader {
+    padding-left: 10.5rem;
+    padding-top: 3rem;
+}
+
+.starHome {
+    float: left;
+    margin: -0.5rem;
+    margin-top: -0.8rem;
+
+}
+
+.scrollSubHead {
+ float: left;
+ margin-top: -0.3rem;
+}
+
+.tableHome {
+    padding-left: 1rem;
+    margin-top: -0.5rem;
+}
+
+.scrollHeading {
+    padding-left: 1rem;
+    padding-top: 0.1rem;
+}
+
+.heartHome {
+    float: right;
+    margin-top: -1.5rem;
+    margin-right: 0.5rem;
+
+}
+
+/* section 3 - about us */
+
+  .aboutBox {
+    margin-top: 5rem;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+  .aboutText {
+    position: absolute;
+    bottom: 0rem;
+    left: 12.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .aboutP {
+    line-height: 2rem;
+    color: #FFFFFF;
+  }
+
+  .aboutHeader {
+    color: #FFFFFF;
+  }
+
+  .aboutImg {
+    position: absolute;
+    bottom: -2.3rem;
+    right: 15.4rem;
+    border-style: solid;
+    border-color: #C23131;
+    border-width: 0.4rem;
+  }
+
+  .rectBack {
+    color: #C23131;
+  }
+
+
+/* section 4 - recipe catergories */
+
+  #catergoriesTable {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.squareImg {
+    position: relative;
+    float: left;
+    padding-right: 2rem;
+    border: #352828;
+}
+
+.squareText1 {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 0.6rem;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.squareText2 {
+    position: absolute;
+    bottom: 0.7rem;
+    left: 0.6rem;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+
+/* section 5 - email CTA */
+
+.emailSubmit { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.emailSubmit label {
+  margin:  0.5rem;
+  padding: 1.5em;
+}
+
+.emailSubmit input {
+  vertical-align: middle;
+  padding:1rem;
+  margin-top: 1rem;
+  padding-right:20%;
+  background-color: #F4ECDC;
+  border: 0;
+  border-radius: 1rem 0px 0px 1rem;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #C23131;
+  font-size: 1rem
+}
+
+.emailSubmit button {
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: 0px 1rem 1rem 0px;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #C23131;
+  font-size: 1rem
+}
+
+.emailForm {
+  float: left;
+  margin-left: 15%;
+  margin-top: 4rem;
+
+}
+
+.emailImg {
+  border-radius: 1rem;
+  float: right;
+  margin-right: 15%;
+  margin-top: 1rem;
+}
+
+.emailBox {
+  margin-top: 1rem;
+}
+
+#emailHeader {
+  padding-bottom: 1rem;
+  color: white;
+}
+
+#emailSubHeader {
+  margin-bottom: 1rem;
+  color: white;
+
+}
+
+
+/* footer formating */
+
+.navBarText {
+line-height: 3rem;
+color: #C23131;
+}
+
+#footerTable {
+  margin-left: 0rem
+}
+
+.narBarBlocks1 {
+  margin-left: 11rem;
+}
+
+.narBarBlocks4 {
+  margin-top: 3.7rem;
+ }
+
+ .narBarBlocks5 {
+  margin-left: 30%;
+  padding-left: 0.4rem; 
+ }
+
+  
